@@ -1,0 +1,1005 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TB-1</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> 
+  <link href="./assets/bootstrap/bt-GT-DA.css" rel="stylesheet">
+   <link href="./assets/css/GT_DA.css" rel="stylesheet"> 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="stylesheet" href="./assets/css/base.css">
+     <link rel="stylesheet" href="./assets/css/choose-quick.css">
+     <link rel="stylesheet" href="./assets/css/body.css">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="shopping_cart/css/bootstrap.min.css" type="text/css">
+    
+     <link rel="stylesheet" href="./shopping_cart/css/style.css" type="text/css"> 
+     <link rel="stylesheet" href="cart_index.css">
+    
+    
+ 
+   <style>
+     
+        #logo
+        {
+            width: 190px;
+            height: 150px;
+            margin-top: -3px;
+            margin-left: 30px;
+            margin-right: 10px;
+        }    
+        .header-with-search 
+          {
+            align-items: center;
+            display: flex;
+            margin-top: 0px;
+            padding-top: 30px;
+          }   
+          video#myVideo
+          {
+            width: 400px;
+            height: 300px;
+          }
+          .content
+          {
+            display: flex;
+          }
+          button#myBtn
+          {
+            margin-right: 10px;
+            border-radius: 3px;
+            border: 1px solid pink;
+            
+          }
+          .section-title
+          {
+            height: 60px;
+            align-items: center;
+            margin-top: 20px;
+          }
+          
+        .row
+        {
+          margin: 50px;
+
+        }
+      
+       
+        .content.d-flex.flex-column.justify-content-center
+        {
+          margin-top: -80px;
+          padding-left: 30px;
+        }
+        section#counts 
+        {
+         
+          padding-top: 0px;
+          padding-bottom: 0px;
+        }
+
+        section#about
+        {
+          padding: 0px;
+        }
+    
+          /* ..Banner.. */
+        .swiper {
+          width: 360px;
+          height: 400px;
+        }
+
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 18px;
+          font-size: 22px;
+          font-weight: bold;
+          color: #fff;
+        }
+
+      .swiper-slide img 
+      {
+        width: 360px;
+          height: 400px;
+          border-radius: 3px;
+      }
+      
+        .tvnew
+        {
+          width: 350px;
+          height: 50px;
+          margin-bottom: 30px;
+        }
+        div#carouselExampleIndicators
+        {
+          margin-top: 120px;
+        }
+
+       .header
+        {
+          height: 120px;
+          top: 0;
+          z-index: 999;
+          position: fixed;
+        }
+      
+    
+   
+   </style>
+ 
+</head>
+
+<body>
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/b95a26c605.js" crossorigin="anonymous"></script>
+ <!--Đổi màu heart-->
+ <script>
+  function changeHeartColor(heart) {
+ heart.parentElement.classList.toggle('heart-active');
+ }
+</script>
+  
+<header class="header ">
+  <div class ="grid" >
+      <nav class="header_navbar">
+          <!--Navbar trái-->
+          <ul class="header_navbar-list">
+              <li class="header_navbar-items header_navbar-items-has-Qr header_navbar-items-sep" style="padding-left: 20px;">
+                  Tải ứng dụng TAMICH
+
+
+                  <!--QR code-->
+                  <div class="header_qr">
+                      <img src="./assets/img/icon_nav/Q.png" alt="Mã Qr" class="header_qr-img">
+                      <div class="header_qr-apps">
+                          <img src="./assets/img/icon_nav/google.png" alt="Google Play" class="header_apps-img" style="margin-left: 11px;">
+                          <img src="./assets/img/icon_nav/iphone.png" alt="App Store" class="header_apps-img" style="margin-right: 11px;">
+                      </div>
+                  </div>
+              </li>
+              <li class="header_navbar-items" >Kết nối
+
+                  <a href="" class="header_navbar-icon-link fac">
+                      <i class="header_navbar-icon fab fa-facebook"></i>
+                  </a>
+                  <a href="" class="header_navbar-icon-link inta">
+                      <i class="header_navbar-icon fab fa-instagram"></i>
+                  </a>
+              </li>
+          </ul>
+      
+          <!--navbar phải-->
+          <ul class="header_navbar-list">
+              <li class="header_navbar-items header_navbar-items-has-notify">
+                  <a href="" class="header_navbar-items-link">
+                      <i class="header_navbar-icon far fa-bell"></i>Thông báo
+                  </a>
+                  <!-- Nội dung thông báo -->
+
+                  <div class="header_notify" >
+                      <header class="header_notify-header">
+                          <h4>Thông báo mới nhận</h4>
+                      </header>
+                      <ul class="header_notify-list  header_notify-items-view" type="none">
+                          <!--thông báo 1-->
+                          <li class="header_notify-items"> 
+                              <a href="./TT.html" class="header_notify-link">
+                                  <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img1.webp"  alt="thông báo 1" class="header_notify-img">
+                                  <div class="header_notify-data">
+                                      <span class="header_notify-name">Sale lớn cho áo sơ mi Tamich</span>
+                                      <br> 
+                                      <span class="header_notify-describe">Với chất liệu cotton co giãn, Tamich là sự lựa chọn tuyệt vời</span>
+                                  </div>
+                              </a> 
+                          </li>
+
+                          <!--thông báo  2-->
+                          <li class="header_notify-items"> 
+                              <a href="./TT2.html" class="header_notify-link">
+                                  <img src="./assets/img/Sanpham/begai/DoBo/Sp2/img1.webp"  alt="thông báo 2" class="header_notify-img">
+                                  <div class="header_notify-data">
+                                      <span class="header_notify-name">Áo thun bé gái</span>
+                                      <br> 
+                                      <span class="header_notify-describe">Sale bùng nổ cho tháng 4, chất liệu vải lanh luôn là lựa chọn tuyệt vời cho ngày hè</span>
+                                  </div>
+                              </a> 
+                          </li>
+
+                           <!--thông báo  3-->
+                           <li class="header_notify-items"> 
+                            <a href="./TT3.html" class="header_notify-link">
+                                <img src="./assets/img/Sanpham/nu/Vay/Chanvay/Sp1/trang/img1.webp"  alt="thông báo 3" class="header_notify-img">
+                                <div class="header_notify-data">
+                                    <span class="header_notify-name">Váy ngày hè cho mẹ</span>
+                                    <br> 
+                                    <span class="header_notify-describe">Chất liệu vải tằm luôn là lựa chọn tuyệt vời cho ngày hè</span>
+                                </div>
+                            </a> 
+                        </li>
+                      </ul> 
+                      
+                      <div class="footer_notify-footer">
+                          <a href="./TT.html" class="footer_notify-footerinfor">Xem kết quả</a>
+                      </div>
+                  </div>       
+              <!------------------------------>
+              <li class="header_navbar-items">
+                  <a href="" class="header_navbar-items-link"> 
+                      <i class="header_navbar-icon far fa-question-circle "></i>Trợ giúp 
+                  </a>
+              </li>
+              <!---------------chua dang ki--------------->
+              <li class="header_navbar-items  header_navbar-items-sep">
+                <a href="./DangKy_DangNhap.html"> Đăng kí </a></li>
+              <li class="header_navbar-items" style="padding-right: 10px;">
+                <a href="./DangKy_DangNhap.html"> Đăng  nhập</a></li>
+              <!--  <li class="header_navbar-items header_navbar-user">
+                  <img src="../DUAN/assets/img/icon_nav/email.png" alt="" class="header_navbar-user-img">
+                  <p class="header_navbar-user-name">Trương Mỹ Hoa</p>
+
+                  <ul class="header_navbar-user-menu">
+
+                      <li class="header_navbar-user-item">
+                          <a href="">Tài khoản</a>
+                      </li>
+
+                      <li class="header_navbar-user-item">
+                          <a href="">Địa chỉ của tôi</a>
+                      </li>
+
+                      <li class="header_navbar-user-item">
+                          <a href="">Đơn mua</a>
+                      </li>
+
+                      <li class="header_navbar-user-item">
+                          <a href="">Đăng xuất</a>
+                      </li>
+                  </ul>
+
+              </li>-->
+
+          </ul>
+      </nav>
+      
+      <!--LOGO THƯƠNG HIỆU-->
+      <div class="header-with-search">
+          <!----->
+          
+            <div class="header_logo" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
+              <a href="./index.html"><img src="./assets/img/icon_nav/logo.png" alt="logo thương hiệu" id="logo"></a> 
+              </div>
+        
+
+          <!----Nhấn logo hiện ra thông báo----->
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                  <img src="./assets/img/icon_nav/tbao_main1.JPG" class="tb_main">
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <!--------->
+          <div class="header-with-search-right">
+                <!--Khung tìm kiếm ---->
+                                       
+                <div class="header_search">
+                  <div class="header_search-input-warp">
+                    <form autocomplete="off" action="search.html">
+                        <div class="autocomplete" style="width:300px;">
+                              <input id="myInput"  type="text" name="items"  class="input_search" placeholder="Tìm kiếm" size="50" style="border-radius: 5px; border: 0px solid white; padding: 10px;">
+                        </div>
+                
+                        <button type="search" class="header_search-btn" id="myInput" >
+                            <img src="./assets/img/icon_nav/kinhlup.png" alt="Submit">
+                        </button>
+                    </form>
+                    </div>
+                </div>
+
+                <!-- srcipt của tìm kiếm-->
+                <script>
+                  
+                      function autocomplete(inp, arr) {
+                      var currentFocus;
+                      
+                      inp.addEventListener("input", function(e) {
+                          var a, b, i, val = this.value;
+                        
+                          closeAllLists();
+                          if (!val) { return false;}
+                          currentFocus = -1;
+                        
+                          a = document.createElement("DIV");
+                          a.setAttribute("id", this.id + "autocomplete-list");
+                          a.setAttribute("class", "autocomplete-items");
+                          
+                          this.parentNode.appendChild(a);
+                        
+                          for (i = 0; i < arr.length; i++) {
+                            
+                            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                            
+                              b = document.createElement("DIV");
+                            
+                              b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                              b.innerHTML += arr[i].substr(val.length);
+                            
+                              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                            
+                              b.addEventListener("click", function(e) {
+
+                                  inp.value = this.getElementsByTagName("input")[0].value;
+                                
+                                  closeAllLists();
+                              });
+                              a.appendChild(b);
+                            }
+                          }
+                      });
+                    
+                      inp.addEventListener("keydown", function(e) {
+                          var x = document.getElementById(this.id + "autocomplete-list");
+                          if (x) x = x.getElementsByTagName("div");
+                          if (e.keyCode == 40) {
+                          
+                            currentFocus++;
+                          
+                            addActive(x);
+                          } else if (e.keyCode == 38) { //up
+                          
+                            currentFocus--;
+                          
+                            addActive(x);
+                          } else if (e.keyCode == 13) {
+                            
+                            e.preventDefault();
+                            if (currentFocus > -1) {
+                            
+                              if (x) x[currentFocus].click();
+                            }
+                          }
+                      });
+                      function addActive(x) {
+                      
+                        if (!x) return false;
+                        removeActive(x);
+                        if (currentFocus >= x.length) currentFocus = 0;
+                        if (currentFocus < 0) currentFocus = (x.length - 1);
+
+                        x[currentFocus].classList.add("autocomplete-active");
+                      }
+                      function removeActive(x) {
+                        
+                        for (var i = 0; i < x.length; i++) {
+                          x[i].classList.remove("autocomplete-active");
+                        }
+                      }
+                      function closeAllLists(elmnt) {
+                        
+                        var x = document.getElementsByClassName("autocomplete-items");
+                        for (var i = 0; i < x.length; i++) {
+                          if (elmnt != x[i] && elmnt != inp) {
+                            x[i].parentNode.removeChild(x[i]);
+                          }
+                        }
+                      }
+
+                      document.addEventListener("click", function (e) {
+                          closeAllLists(e.target);
+                      });
+                    }
+
+
+                    var countries = ["Áo thun","Áo sơ mi","Áo khoác" ,"Quần Short","Váy","Chân Váy","Đồ bộ"];
+
+
+                    autocomplete(document.getElementById("myInput"), countries);
+
+                </script>
+              
+
+              
+                <!---Giỏ hàng-->
+                <div class="header_cart">
+                  <div class="header_cart-wrap">
+                      <i class="fa fa-cart-plus" ></i>
+                      <span class="header_cart-notice">0</span>
+                  </div>
+              </div>
+                <!----->
+                <div class="header_infor">
+                  <a href="./GioiThieuDoAn.html"> <img src="./assets/img/icon_nav/nha.png" alt="hinh anh thong tin nhom" class="header_home_info"></a>
+                </div>
+          </div>
+         </div>
+      
+  </div>  
+</header>
+    
+    <!--Banner-->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/img/icon_nav/tbao2.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/icon_nav/tbao3.webp" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/icon_nav/tbao4.webp" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  <main id="main">
+    
+    <!--Flash sale & video-->
+    <section id="about" class="about">
+      <div class="container">
+
+        <!-- Chữ flash sale-->
+
+        <div class="section-title" data-aos="fade-up">
+       
+            <canvas id="myCanvas"></canvas>
+
+            <!--Script chữ flash sale-->
+            <script>
+                const canvas = document.getElementById("myCanvas");
+                const ctx = canvas.getContext("2d");
+        
+                // Shadow
+                ctx.shadowColor = "pink";
+                ctx.shadowOffsetX = 5;
+                ctx.shadowOffsetY = 5;
+        
+                ctx.font = "50px Arial";
+        
+                // Filled text
+                ctx.fillStyle = "purple";
+                ctx.fillText("FLASH SALES", 10, 60);
+        
+            </script>
+          
+        </div>
+            <!----->
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <h3 style="margin-bottom: 30px; color:rgb(119, 5, 89);font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Áo Sơ Mi</h3>
+             <img src="./assets/img/icon_nav/Capture.JPG" alt="" class="img-fluid">
+           
+                        <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+              <source src="./assets/video/Media1.mp4" type="video/mp4">
+            </video>
+
+            
+            <div class="content">
+              <button id="myBtn" onclick="myFunction()">Play</button>
+              <p style="margin-right: 10px; color:rgb(6, 4, 103); border-bottom: 1px solid blue;cursor: pointer;"><i>Video hướng dẫn cách gấp đồ</i></p>
+                   
+            </div>
+            <script>
+              // Get the video
+              var video = document.getElementById("myVideo");
+              
+              // Get the button
+              var btn = document.getElementById("myBtn");
+              
+              // Pause and play the video
+              function myFunction() {
+                if (video.paused) {
+                  video.play();
+                  btn.innerHTML = "End";
+                } else {
+                  video.pause();
+                  btn.innerHTML = "Play";
+                }
+              }
+              </script>
+                        
+         
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="swiper-slide">
+            <!--Ảnh -->
+             
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+              
+                <div class="swiper-slide">
+                  <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img1.webp">
+                </div>
+                <div class="swiper-slide">
+                  
+                  <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img2.webp">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img3.webp">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img4.webp">
+                </div>
+               
+              </div>
+            </div>
+            <!---Script ảnh-->
+            <script>
+              var swiper = new Swiper(".mySwiper", {
+                effect: "cards",
+                grabCursor: true,
+              });
+            </script>
+                      
+           
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <h3 style="margin-left: 130px;color:rgb(119, 5, 89);font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Chất liệu</h3>
+    
+      <div class="container">
+  
+          <div class="row">
+            <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+              <ul>
+                  <li><i class="ri-check-double-line"> </i><i style="color:rgb(6, 90, 118)">Chất liệu chọn lọc:</i> Chúng tôi tự hào mang đến cho bạn những chiếc áo thun được làm từ chất liệu cao cấp, đảm bảo sự thoáng mát.</li>
+                  <li><i class="ri-check-double-line"></i> <i style="color:rgb(6, 90, 118)">Thiết kế đa dạng:</i> Các mẫu áo thun đa dạng  để bạn có thể lựa chọn bạn có thể tìm thấy phong cách phù hợp với cá nhân và sở thích của mình.</li>
+                  <li><i class="ri-check-double-line"></i> <i style="color:rgb(6, 90, 118)">Đảm bảo chất lượng:</i>Chất lượng là ưu tiên hàng đầu của chúng tôi. </li>
+              </ul>
+
+            </div>
+  
+            <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+              <div class="content d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-emoji-smile"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+                      <p><strong>Giới thiệu sản phẩm</strong> Với chất liệu cotton , áo sơ mi Tamich mang lại cảm giác mát mẻ và hợp thời trang,....</p>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-journal-richtext"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+                      <p><strong>Thanh toán trực tuyến</strong> Thanh toán qua cổng thanh toán online, thanh toán khi nhận hàng,...</p>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-6 d-md-flex align-items-md-stretch">
+                    <div class="count-box">
+                      <i class="bi bi-clock"></i>
+                      <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+                      <p><strong>Flash Sale</strong> FLASH SALE  giảm hơn 50% các mặt hàng coton</p>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+  
+      </div>
+ 
+    <!---Gơi ý-->
+    <div class="poster-text">
+      <h3 style="margin-left: 130px ;margin-bottom: 30px; color:rgb(119, 5, 89);font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">Một số gợi ý</h3>
+    </div>
+     
+      <!--Phần gợi ý 1-->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 items ">
+          <div class="product-item">
+              <div class="style_sale_new">Hàng mới</div>
+              <div class="style_sale_heart">
+                <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+              </div>
+            <img class="img" id="myImage12" src="./assets/img/Sanpham/nu/DoBo/Sp3/hong/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage12').src='./assets/img/Sanpham/nu/DoBo/Sp3/hong/img1.webp'"  class="icon_color" style="background-color:pink" >
+             
+              </button>
+              <button onclick="document.getElementById('myImage12').src='./assets/img/Sanpham/nu/DoBo/Sp3/vang/img1.webp'"  class="icon_color" style="background-color:rgb(224, 237, 77)" >
+             
+              </button>
+           
+            </div>
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                  Bộ mặc nhà nữ áo cộc tay quần soóc 
+              </a>
+          </div>
+
+          
+          <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+            <b id="tien">449.000 đ</b> 
+          </div>
+          <div class="item_when_hover_detail">
+            <a href="">Xem Chi Tiết</a>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+              <div class="style_sale_shock">Sale</div>
+              <div class="style_sale_heart">
+                <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+              </div>
+            <img class="img" id="myImage13" src="./assets/img/Sanpham/nam/DoBo/Sp4/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage13').src='./assets/img/Sanpham/nam/DoBo/Sp4/img1.webp'"  class="icon_color" style="background-color:rgb(6, 4, 103)">
+              </button>
+
+             
+            </div>
+            
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                  Bộ mặc nhà nam áo ba lỗ quần soóc 
+              </a>
+            </div>
+
+          
+           
+            <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+              <b id="tien">381.000 đ</b> 
+              <del id="giam">449.000 đ</del>
+            </div>
+            <div class="item_when_hover_detail">
+              <a href="">Xem Chi Tiết</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+            <div class="style_sale_good">Giá tốt</div>
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img  class="img" id="myImage14" src="./assets/img/Sanpham/betrai/DoBo/Sp2/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage14').src='./assets/img/Sanpham/betrai/DoBo/Sp2/img1.webp'"  class="icon_color" style="background-color: rgb(3, 20, 86);" >
+              
+              </button>
+             
+            </div>
+            
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                  Bộ mặc nhà bé trai cotton cộc tay 
+              </a>
+            </div>
+            <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+              <b id="tien">279.000 đ</b> 
+             </div>
+       
+
+             <div class="item_when_hover_detail">
+              <a href="">Xem Chi Tiết</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+            <div class="style_sale_shock">Sale</div>
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img class="img" id="myImage15" src="./assets/img/Sanpham/begai/DoBo/Sp2/img1.webp">
+       
+          <div class="div_icon_color">
+          <button onclick="document.getElementById('myImage15').src='./assets/img/Sanpham/begai/DoBo/Sp2/img1.webp'"  class="icon_color" style="background-color:rgb(237, 169, 219)" >
+          
+          </button>
+          
+         
+            
+          <div style="padding-top: 10px;">
+            <a href="" target="_blank" class="cirle_deco">
+                Bộ mặc nhà bé gái cộc tay 
+            </a>
+        </div>
+
+          
+        <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+          <b id="tien">211.000 đ</b> 
+          <del id="giam">249.000 đ</del>
+        </div>
+     
+        <div class="item_when_hover_detail">
+          <a href="">Xem Chi Tiết</a>
+        </div>
+         </div>
+        </div>
+        </div>
+      </div>
+
+      <!--Phần gợi ý 2-->
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 items ">
+          <div class="product-item">
+            <div class="style_sale_new">Hàng mới</div>
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img class="img" id="myImage16" src="./assets/img/Sanpham/nu/Ao/Aothun/Sp3/hong/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage16').src='./assets/img/Sanpham/nu/Ao/Aothun/Sp3/hong/img1.webp'"  class="icon_color" style="background-color:pink" >
+             
+              </button>
+              <button onclick="document.getElementById('myImage16').src='./assets/img/Sanpham/nu/Ao/Aothun/Sp3/den/img1.webp'"  class="icon_color" style="background-color:rgb(15, 15, 15)" >
+             
+              </button>
+           
+            </div>
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                Áo phông nữ cotton USA 
+              </a>
+            </div>
+         
+
+          
+          <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+            <b id="tien">299.000 đ</b> 
+          
+          </div>
+          <div class="item_when_hover_detail">
+            <a href="">Xem Chi Tiết</a>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+            <div class="style_sale_good">Giá tốt</div>
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img class="img" id="myImage17" src="./assets/img/Sanpham/nam/Ao/Aothun/Sp1/xanh/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage17').src='./assets/img/Sanpham/nam/Ao/Aothun/Sp1/xanh/img1.webp'"  class="icon_color" style="background-color:rgb(6, 90, 118)">
+              </button>
+              <button onclick="document.getElementById('myImage17').src='./assets/img/Sanpham/nam/Ao/Aothun/Sp1/xam/img1.webp'"  class="icon_color" style="background-color:rgb(111, 111, 119)">
+              </button>
+
+             
+            </div>
+            
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                  Áo thun nam có hình in
+              </a>
+            </div>
+
+          
+           
+            <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+              <b id="tien">299.000 đ</b>  
+             </div>
+         
+             <div class="item_when_hover_detail">
+              <a href="">Xem Chi Tiết</a>
+            </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+            <div class="style_sale_new">Hàng mới</div>
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img  class="img" id="myImage18" src="./assets/img/Sanpham/betrai/Ao/Aothun/Sp1/img1.webp">
+
+            <div class="div_icon_color">
+              <button onclick="document.getElementById('myImage18').src='./assets/img/Sanpham/betrai/Ao/Aothun/Sp1/img1.webp'"  class="icon_color" style="background-color: rgb(241, 241, 242);" >
+              
+              </button>
+             
+            </div>
+            
+            <div style="padding-top: 10px;">
+              <a href="" target="_blank" class="cirle_deco">
+                  Áo phông bé trai cotton cổ tròn 
+              </a>
+            </div>
+            <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+              <b id="tien">199.000 đ</b> 
+          </div>
+       
+
+          <div class="item_when_hover_detail">
+            <a href="">Xem Chi Tiết</a>
+          </div>
+         </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 items">
+          <div class="product-item">
+           
+            <div class="style_sale_heart">
+              <i class="fa fa-heart" onclick="changeHeartColor(this)"></i>
+            </div>
+            <img class="img" id="myImage19" src="./assets/img/Sanpham/begai/Ao/Aothun/Sp4/img1.webp">
+          
+          
+          <div class="div_icon_color">
+          <button onclick="document.getElementById('myImage19').src='./assets/img/Sanpham/begai/Ao/Aothun/Sp4/img1.webp'"  class="icon_color" style="background-color:rgb(15, 15, 15)" >
+          
+          </button>
+          
+         
+            
+          <div style="padding-top: 10px;">
+            <a href="" target="_blank" class="cirle_deco">
+                Áo phông bé gái có in hình Winnie 
+            </a>
+          </div>
+
+          
+          
+          <div style="display:flex;padding-top: 10px;padding-bottom: 10px;">
+            <b id="tien">118.000 đ</b> 
+            <del id="giam">169.000 đ</del>
+           </div>
+     
+           <div class="item_when_hover_detail">
+            <a href="">Xem Chi Tiết</a>
+          </div>
+         </div>
+        </div>
+        </div>
+      </div>
+
+      <!--Footer-->
+    <footer class="footer">
+     <p style="align-items: center; text-align: center;">-----------------------------------------------------------------------------------------------------------------------------</p>
+      <iframe src="Footer.html" scrolling="no" style="width:100%;height:500px;box-sizing: border-box;"></iframe> 
+    </footer> 
+
+    </main>
+
+   
+
+ <!--Phần Giỏ hàng-->
+ <section class="shopping-cart" name="Cart">
+  <h2 style="align-items: center; color: red; font-weight: bold; margin-left: 200px; position: fixed;">Giỏ Hàng</h1>
+    <span style="float:inline-end; padding-right: 10px; cursor: pointer;"><i class='bx bx-x' style="font-size: xx-large;"></i></span>
+   
+    <div class="container">
+       
+        
+        <div class="row">
+            <div class="col-lg-11">
+                <div class="shopping__cart__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sản Phẩm</th>
+                                <th>Số Lượng</th>
+                                <th>Tổng Tiền</th>
+                                <th class="delete_all" style="cursor: pointer;">Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--
+                            <tr>
+                                <td class="product__cart__item">
+                                    <div class="product__cart__item__pic">
+                                        <img src="../assets/img/magiamgia.webp" alt="" width="70px" height="100px">
+                                    </div>
+                                    <div class="product__cart__item__text">
+                                        <h6 class="title">T-shirt Contrast Pocket</h6>
+                                        <h5>60.000</h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <input type="number" value="1" min="1" style="outline: none;">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">60.000<sup>đ</sup></td>
+                                <td class="cart__close" style="cursor:pointer"><i class="fa fa-trash"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="product__cart__item">
+                                    <div class="product__cart__item__pic">
+                                        <img src="../assets/img/magiamgia.webp" alt="" width="70px" height="100px">
+                                    </div>
+                                    <div class="product__cart__item__text">
+                                        <h6 class="title">Diagonal Textured Cap</h6>
+                                        <h5><span>60.000<span></h5>
+                                    </div>
+                                </td>
+                                <td class="quantity__item">
+                                    <div class="quantity">
+                                        <div class="pro-qty-2">
+                                            <input type="number" value="1" min="1" style="outline: none;">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart__price">60.000<sup>đ</sup></td>
+                                <td class="cart__close" style="cursor:pointer"><i class="fa fa-trash"></i></td>
+                            </tr>
+                          -->
+                        </tbody>
+                    </table>
+                    <div style="text-align: right;" class="price_total">
+                        <p style="font-weight:700; font-size: medium; margin-top: 10px;">Tổng Tiền: <span>0</span>đ</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6"style="display: flex;">
+                        <div class="continue__btn" >
+                            <a href="../index.html" class="primary-btn" style="border-radius: 30px; background-color: white; font-weight: bolder; box-sizing: content-box; border-radius: 30px ; margin-right: 20px; width: 180px;font-size: 13px;margin-left: 60px;">Tiếp tục mua sắm</a>
+                        </div>
+                        <div class="continue__btn">
+                          <div id="overlay" onclick="off()">
+                            <div id="text">
+                              Thanh Toán Thành Công
+                              <i class='bx bx-check'></i></div>
+                          </div>
+                          
+                          <div>
+                            <a href="#" onclick="on()" class="primary-btn" name="ThanhToan" style="border-radius: 30px; background-color: rgb(235, 7, 102); font-weight: bolder; color:white; margin-right: -100px; padding-left: 20px;width: 180px; font-size: 13px;">Thanh Toán</a>
+                          </div>
+                          
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+<script src="cart_index.js"></script>
+</body>
+
+</html>

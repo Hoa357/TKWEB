@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begai-Quan-Items</title>
+
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/Object-clothes-items.css">
+    <link rel="stylesheet" href="./assets/css/choose-quick.css">
+    <link rel="stylesheet" href="./assets/css/object_items.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/body.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> <!---hover logo-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="shopping_cart/css/bootstrap.min.css" type="text/css">
+   
+    <link rel="stylesheet" href="./shopping_cart/css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="cart_index.css">
+
+    <style>
+    b{
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+    #logo
+    {
+        width: 190px;
+        height: 150px;
+        margin-top: -3px;
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+        /*===============*/
+
+    .slidenav-size-items
+    {
+    
+        padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    
+    }
+    .slidenav-size-items 
+    { 
+    
+    border: 1px solid black;
+    margin-left: 5px;
+    width: 35px;
+    height: 25px;
+    border-radius: 2px;
+    
+    }
+    .slidenav-size
+    {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    .slidenav-size div
+    {
+    cursor: pointer;
+    }
+    .slidenav-size div:hover
+    {
+    background-color: rgb(166, 223, 232);
+    }
+    .row
+    {
+    margin: 50px;
+    }
+    </style>
+</head>
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--map-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script> <!--map-->
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b95a26c605.js" crossorigin="anonymous"></script>
+  
+  <!--Đổi màu heart-->
+  <script>
+    function changeHeartColor(heart) {
+   heart.parentElement.classList.toggle('heart-active');
+   }
+ </script>
+
+
+    <script src="./main.js"></script>
+    <!-- ------------------------------- HEADER -------------------------------- -->
+    <header class="header sticky">
+        <div class="grid">
+          <nav class="header_navbar">
+            <!--Navbar trái-->
+            <ul class="header_navbar-list">
+              <li class="header_navbar-items header_navbar-items-has-Qr header_navbar-items-sep"
+                style="padding-left: 20px;">
+                Tải ứng dụng TAMICH
+
+                <!--QR code-->
+                <div class="header_qr">
+                  <img src="./assets/img/icon_nav/Q.png" alt="Mã Qr" class="header_qr-img">
+                  <div class="header_qr-apps">
+                    <img src="./assets/img/icon_nav/google.png" alt="Google Play" class="header_apps-img"
+                      style="margin-left: 11px;">
+                    <img src="./assets/img/icon_nav/iphone.png" alt="App Store" class="header_apps-img"
+                      style="margin-right: 11px;">
+                  </div>
+                </div>
+              </li>
+              <li class="header_navbar-items">Kết nối
+
+                <a href class="header_navbar-icon-link fac">
+                  <i class="header_navbar-icon fab fa-facebook"></i>
+                </a>
+                <a href class="header_navbar-icon-link inta">
+                  <i class="header_navbar-icon fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+
+            <!--navbar phải-->
+            <ul class="header_navbar-list">
+              <li class="header_navbar-items header_navbar-items-has-notify">
+                <a href class="header_navbar-items-link">
+                  <i class="header_navbar-icon far fa-bell"></i>Thông báo
+                </a>
+                <!-- Nội dung thông báo -->
+
+                <div class="header_notify">
+                  <header class="header_notify-header">
+                    <h4>Thông báo mới nhận</h4>
+                  </header>
+                  <ul class="header_notify-list  header_notify-items-view" type="none">
+                    <!--thông báo 1-->
+                    <li class="header_notify-items">
+                      <a href="./TT.html" class="header_notify-link">
+                        <img src="./assets/img/Sanpham/nam/Ao/Aosomi/Sp1/den/img1.webp" alt="thông báo 1"
+                          class="header_notify-img">
+                        <div class="header_notify-data">
+                          <span class="header_notify-name">Sale lớn cho áo sơ mi Tamich</span>
+                          <br>
+                          <span class="header_notify-describe">Với chất liệu cotton co giãn, Tamich là sự lựa chọn tuyệt
+                            vời</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <!--thông báo  2-->
+                    <li class="header_notify-items">
+                      <a href="./TT2.html" class="header_notify-link">
+                        <img src="./assets/img/Sanpham/begai/DoBo/Sp2/img1.webp" alt="thông báo 2"
+                          class="header_notify-img">
+                        <div class="header_notify-data">
+                          <span class="header_notify-name">Áo thun bé gái</span>
+                          <br>
+                          <span class="header_notify-describe">Sale bùng nổ cho tháng 4, chất liệu vải lanh luôn là lựa
+                            chọn tuyệt vời cho ngày hè</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <!--thông báo  3-->
+                    <li class="header_notify-items">
+                      <a href="./TT3.html" class="header_notify-link">
+                        <img src="./assets/img/Sanpham/nu/Vay/Chanvay/Sp1/trang/img1.webp" alt="thông báo 3"
+                          class="header_notify-img">
+                        <div class="header_notify-data">
+                          <span class="header_notify-name">Váy ngày hè cho mẹ</span>
+                          <br>
+                          <span class="header_notify-describe">Chất liệu vải tằm luôn là lựa chọn tuyệt vời cho ngày
+                            hè</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="footer_notify-footer">
+                    <a href="./TT.html" class="footer_notify-footerinfor">Xem kết quả</a>
+                  </div>
+                </div>
+                <!------------------------------>
+                <li class="header_navbar-items">
+                  <a href class="header_navbar-items-link">
+                    <i class="header_navbar-icon far fa-question-circle "></i>Trợ giúp
+                  </a>
+                </li>
+                <!---------------chua dang ki--------------->
+                <li class="header_navbar-items  header_navbar-items-sep">
+                  <a href="./DangKy_DangNhap.html"> Đăng kí </a></li>
+                <li class="header_navbar-items" style="padding-right: 10px;">
+                  <a href="./DangKy_DangNhap.html"> Đăng nhập</a></li>
+                <!--  <li class="header_navbar-items header_navbar-user">
+                        <img src="../DUAN/assets/img/icon_nav/email.png" alt="" class="header_navbar-user-img">
+                        <p class="header_navbar-user-name">Trương Mỹ Hoa</p>
+
+                        <ul class="header_navbar-user-menu">
+
+                            <li class="header_navbar-user-item">
+                                <a href="">Tài khoản</a>
+                            </li>
+
+                            <li class="header_navbar-user-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+
+                            <li class="header_navbar-user-item">
+                                <a href="">Đơn mua</a>
+                            </li>
+
+                            <li class="header_navbar-user-item">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+
+                    </li>-->
+
+              </ul>
+            </nav>
+
+            <!--LOGO THƯƠNG HIỆU-->
+            <div class="header-with-search">
+              <!----->
+
+              <div class="header_logo">
+                <a href="./index.html"> <img src="./assets/img/icon_nav/logo.png" alt="logo thương hiệu" id="logo"></a>
+              </div>
+             
+
+              <!----Nhấn logo hiện ra thông báo-----
+                <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content">
+                    <div class="w3-container">
+                      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <img src="./assets/img/icon_nav/tbao_main1.JPG" class="tb_main">
+                    </div>
+                  </div>
+                </div>  --->
+
+              <!--------->
+              <div class="header-with-search-right">
+                <!--Khung tìm kiếm ---->
+
+                <div class="header_search">
+                  <div class="header_search-input-warp">
+                    <form autocomplete="off" action="search.html">
+                      <div class="autocomplete" style="width:300px;">
+                        <input id="myInput" type="text" name="items" class="input_search" placeholder="Tìm kiếm"
+                          size="50" style="border-radius: 5px; border: 0px solid white; padding: 10px;">
+                      </div>
+
+                      <button type="search" class="header_search-btn" id="myInput">
+                        <img src="./assets/img/icon_nav/kinhlup.png" alt="Submit">
+                      </button>
+                    </form>
+                  </div>
+                </div>
+
+                <!-- srcipt của tìm kiếm--->
+                <script>
+                        
+                            function autocomplete(inp, arr) {
+                            var currentFocus;
+                            
+                            inp.addEventListener("input", function(e) {
+                                var a, b, i, val = this.value;
+                              
+                                closeAllLists();
+                                if (!val) { return false;}
+                                currentFocus = -1;
+                              
+                                a = document.createElement("DIV");
+                                a.setAttribute("id", this.id + "autocomplete-list");
+                                a.setAttribute("class", "autocomplete-items");
+                                
+                                this.parentNode.appendChild(a);
+                              
+                                for (i = 0; i < arr.length; i++) {
+                                  
+                                  if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                  
+                                    b = document.createElement("DIV");
+                                  
+                                    b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                                    b.innerHTML += arr[i].substr(val.length);
+                                  
+                                    b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                                  
+                                    b.addEventListener("click", function(e) {
+
+                                        inp.value = this.getElementsByTagName("input")[0].value;
+                                      
+                                        closeAllLists();
+                                    });
+                                    a.appendChild(b);
+                                  }
+                                }
+                            });
+                          
+                            inp.addEventListener("keydown", function(e) {
+                                var x = document.getElementById(this.id + "autocomplete-list");
+                                if (x) x = x.getElementsByTagName("div");
+                                if (e.keyCode == 40) {
+                                
+                                  currentFocus++;
+                                
+                                  addActive(x);
+                                } else if (e.keyCode == 38) { //up
+                                
+                                  currentFocus--;
+                                
+                                  addActive(x);
+                                } else if (e.keyCode == 13) {
+                                  
+                                  e.preventDefault();
+                                  if (currentFocus > -1) {
+                                  
+                                    if (x) x[currentFocus].click();
+                                  }
+                                }
+                            });
+                            function addActive(x) {
+                            
+                              if (!x) return false;
+                              removeActive(x);
+                              if (currentFocus >= x.length) currentFocus = 0;
+                              if (currentFocus < 0) currentFocus = (x.length - 1);
+
+                              x[currentFocus].classList.add("autocomplete-active");
+                            }
+                            function removeActive(x) {
+                              
+                              for (var i = 0; i < x.length; i++) {
+                                x[i].classList.remove("autocomplete-active");
+                              }
+                            }
+                            function closeAllLists(elmnt) {
+                              
+                              var x = document.getElementsByClassName("autocomplete-items");
+                              for (var i = 0; i < x.length; i++) {
+                                if (elmnt != x[i] && elmnt != inp) {
+                                  x[i].parentNode.removeChild(x[i]);
+                                }
+                              }
+                            }
+
+                            document.addEventListener("click", function (e) {
+                                closeAllLists(e.target);
+                            });
+                          }
+
+
+                          var countries = ["Áo thun","Áo sơ mi","Áo khoác" ,"Quần Short","Váy","Chân Váy","Đồ bộ"];
+
+
+                          autocomplete(document.getElementById("myInput"), countries);
+
+                      </script>
+
+                <!---Giỏ hàng-->
+                <div class="header_cart">
+                  <div class="header_cart-wrap">
+                      <i class="fa fa-cart-plus" ></i>
+                      <span class="header_cart-notice">0</span>
+                  </div>
+              </div>
+                <!----->
+                <div class="header_infor">
+                  <a href="./GT_DA.html"> <img src="./assets/img/icon_nav/nha.png" alt="hinh anh thong tin nhom"
+                      class="header_home_info"></a>
+                </div>
+              </div>
+            </div>
+            <!--Lua chon nhanh -->
+
+             <!--Nam-->
+             <div class="search_quick">
+            
+              <ul id="search_quick_items" type="none">
+                  <li>
+                      <div class=" search_quick-choose-nam">
+                          <a href="NAM.html" alt="" class="style_quick_choose_heading">Nam</a>
+                        
+                            <div class="search_quick_algin search_quick-choose-nam-modal">
+                          
+                              <table id="table_font">
+                                <tr>
+                                  <td>
+                                   <!--Slide-->
+                                   <iframe  src="./slide-_choose-quick/nam.html" class="iframe_slide-quick-choose" scrolling="no"> </iframe>
+                        
+                          
+                                  </td>
+                                  <td>
+                                    <ul type="none">
+                                      <li class="search1">Áo nam</li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./Nam-Ao-items.html" alt="áo thun">Áo thun</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./--Nam-Aosomi-items .html" alt="áo sơ mi">Áo sơ mi</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./--Nam-Aokhoac-items .html" alt="áo khoác">Áo khoác</a></li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul type="none" >
+                                      <li class="search1  quan_nam">Quần nam</li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./Nam-Quan-items.html" alt="quan sort">Quần Short</a></li>
+                                      <br>
+                                      <li id="style_quick_choose" ><a href="./Nam-Quan-items.html" alt="quan Jean">Quần Jean</a></li>
+                                       <br>
+                                       <li id="style_quick_choose" ><a href="" alt="quan Jean" style="opacity: 0;">______</a></li>
+                                                                         
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul type="none" class="dobo_nam">
+                                      <li class="search1 ">Đồ bộ</li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./Nam-Dobo-items.html" alt="bồ đọ">BST</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <ul type="none" class="style_quick_choose">
+                                      <li style="color:red;font-weight: 900; margin-top: -20px;">Nổi bật</li>
+                                      <br>
+                                      <li id="style_quick_choose" ><a href="./Nam-Ao-items.html" alt="hang moi ve">Hàng mới về</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="./Nam-Dobo-items.html" alt="uv">Sale khủng</a></li>
+                                      <br>
+                                      <li id="style_quick_choose"><a href="#" alt="uv" style="opacity: 0;">_____</a></li>
+                                                                         
+                                    </ul>
+                                  </td>
+                                  <td>
+                                    <img src="./assets/img/Sanpham/nam/Quan/Quanshort/Sp2/den/img1.webp" alt="áo" class="img_slide-choose-quick">
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                         
+                      </div>
+                  </li>
+               
+              <!--Nu-->
+            
+              <li>
+                <div class=" search_quick-choose-nam">
+                    <a href="NU.html" alt="" class="style_quick_choose_heading">Nữ</a>
+                
+                    <div class="search_quick_algin search_quick-choose-nam-modal">
+                  
+                      <table id="table_font">
+                        <tr>
+                          <td>
+                            <img src="./assets/img/Sanpham/nu/Ao/Aothun/Sp2/img2.webp" alt="áo" class="img_slide-choose-quick">
+                  
+                          </td>
+                          <td>
+                            <ul type="none">
+                              <li class="search1">Áo nữ</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Nu-Ao-items.html" alt="áo thun">Áo thun</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./--Nu-Aosomi-items .html" alt="áo sơ mi">Áo sơ mi</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Nu-Ao-items.html" alt="áo khoác">Áo khoác</a></li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" >
+                              <li class="search1  quan_nam">Quần nữ</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Nu-Quan-items.html" alt="quan sort">Quần Short</a></li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./Nu-Quan-items.html" alt="quan Jean">Quần Jean</a></li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="#" alt="quan Jean" style="opacity: 0;">______</a></li>
+                             
+                             
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none">
+                              <li class="search1  dobo_nam">Váy</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./--Nu-VayLien-items .html" alt="bồ đọ">Váy liền</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Nu-Vay-items.html" alt="bồ đọ">Chân váy</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">_______</a></li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" class="style_quick_choose">
+                              <li style="color:red;font-weight: 900; margin-top: -20px;">Nổi bật</li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./--Nu-VayLien-items .html" alt="hang moi ve">Hàng mới về</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Nu-Ao-items.html" alt="uv">Sale khủng</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="#" alt="uv" style="opacity: 0;">________</a></li>
+                                                          
+                            </ul>
+                          </td>
+                          <td>
+                             <!--Slide-->
+                             <iframe  src="./slide-_choose-quick/nu.html" class="iframe_slide-quick-choose" scrolling="no"> </iframe>
+                          </td>
+                          
+  
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+            </li>
+               
+              
+            <!--Be gai-->
+           
+           
+            <li>
+              <div class=" search_quick-choose-nam">
+                  <a href="BEGAI.html" alt="" class="style_quick_choose_heading">Bé gái</a>
+                
+                    <div class="search_quick_algin search_quick-choose-nam-modal">
+                  
+                      <table id="table_font">
+                        <tr>
+                          <td>
+                           <!--Slide-->
+                           <iframe  src="./slide-_choose-quick/bagai.html" class="iframe_slide-quick-choose" scrolling="no"> </iframe>
+                
+                  
+                          </td>
+                          <td>
+                            <ul type="none">
+                              <li class="search1">Áo bé</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Begai-Ao-items.html" alt="áo thun">Áo thun</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./--Begai-Aokhoac.html" alt="áo khoác">Áo khoác</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="#" alt="áo sơ mi" style="opacity: 0;">Áo sơ mi</a></li>
+                                                          
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" >
+                              <li class="search1  quan_nam">Quần nam</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Begai-Quan-items.html" alt="quan sort">Quần Short</a></li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./Begai-Quan-items.html" alt="quan Jean">Quần Jean</a></li>
+                               <br>
+                               <li id="style_quick_choose" ><a href="" alt="quan Jean" style="opacity: 0;">______</a></li>
+                                                                 
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" class="dobo_nam">
+                              <li class="search1 ">Đồ bộ</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Begai-Dobo-items.html" alt="bồ đọ">BST</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" class="style_quick_choose">
+                              <li style="color:red;font-weight: 900; margin-top: -20px;">Nổi bật</li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./Begai-Ao-items.html" alt="hang moi ve">Hàng mới về</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Begai-Dobo-items.html" alt="uv">Sale khủng</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="#" alt="uv" style="opacity: 0;">_____</a></li>
+                                                                 
+                            </ul>
+                          </td>
+                          <td>
+                            <img src="./assets/img/Sanpham/begai/Ao/Aothun/Sp1/hong/img1.webp" alt="áo" class="img_slide-choose-quick">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                 
+              </div>
+          </li>
+           
+          
+      
+            <!--Bé trai-->
+         
+            <li>
+              <div class=" search_quick-choose-nam">
+                  <a href="BETRAI.html" alt="" class="style_quick_choose_heading">Bé trai</a>
+                
+                    <div class="search_quick_algin search_quick-choose-nam-modal">
+                  
+                      <table id="table_font">
+                        <tr>
+                          <td>
+                           <!--Slide-->
+                           <iframe  src="./slide-_choose-quick/batrai.html" class="iframe_slide-quick-choose" scrolling="no"> </iframe>
+                
+                  
+                          </td>
+                          <td>
+                            <ul type="none">
+                              <li class="search1">Áo bé</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Betrai-Ao-items.html" alt="áo thun">Áo thun</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./--Betrai-Aokhoac-items" alt="áo khoác">Áo khoác</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="#" alt="áo sơ mi" style="opacity: 0;">Áo sơ mi</a></li>
+                              
+                              
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" >
+                              <li class="search1  quan_nam">Quần bé</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Betrai-Quan-items.html" alt="quan sort">Quần Short</a></li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./Betrai-Quan-items.html" alt="quan Jean">Quần Jean</a></li>
+                               <br>
+                               <li id="style_quick_choose" ><a href="" alt="quan Jean" style="opacity: 0;">______</a></li>
+                                                                 
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" class="dobo_nam">
+                              <li class="search1 ">Đồ bộ</li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Betrai-Dobo-items.html" alt="bồ đọ">BST</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="" alt="bồ đọ" style="opacity: 0;">______</a></li>
+                            </ul>
+                          </td>
+                          <td>
+                            <ul type="none" class="style_quick_choose">
+                              <li style="color:red;font-weight: 900; margin-top: -20px;">Nổi bật</li>
+                              <br>
+                              <li id="style_quick_choose" ><a href="./Betrai-Ao-items.html" alt="hang moi ve">Hàng mới về</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="./Betrai-Quan-items.html" alt="uv">Sale khủng</a></li>
+                              <br>
+                              <li id="style_quick_choose"><a href="#" alt="uv" style="opacity: 0;">_____</a></li>
+                                                                 
+                            </ul>
+                          </td>
+                          <td>
+                            <img src="./assets/img/Sanpham/betrai/Quan/Quanshort/Sp3/img1.webp" alt="áo" class="img_slide-choose-quick">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                 
+              </div>
+          </li>
+          
+          
+              </ul>
+              </div>
+
+          </header>
+
+          <!--Banner-->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/icon_nav/tbao1.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/icon_nav/tbao2.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/icon_nav/tbao4.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!---notification -->
+         
+       <div class="noti_choose">
+        <div class="notificaton_dow">
+        <div class="toggle-btn">
+          <i class='bx bx-plus'></i>
+        </div>
+        <span style="--i:5;">
+          <a href="#" id="backtop"><i class='bx bxs-home'></i></a>
+        </span>
+        <span style="--i:4;">
+          <a href="#" id="switch-mode">
+            <i class='bx bx-sun'></i>
+          </a>
+        </span>
+        <span style="--i:3;">
+          <a href="" data-toggle="modal" data-target="#myModal">
+            <i class='bx bxs-map' > </i>
+          </a>
+        </span>
+      </div>
+       </div >
+
+       <!--MAP -->
+       <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7838.134575200932!2d106.62497562570954!3d10.806158505878432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be27d8b4f4d%3A0x92dcba2950430867!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBUaMawxqFuZyBUUC4gSOG7kyBDaMOtIE1pbmggKEhVSVQp!5e0!3m2!1svi!2s!4v1714985724721!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!---Script dark/ light-->
+    <script>
+      const body = document.body;
+      const switchMode = document.querySelector('#switch-mode i');
+      let mode = localStorage.getItem('darkmode')
+    //  console.log(mode);
+      if(mode == 'true')
+      {
+        body.classList.add('dark');
+        switchMode.className= "bx bx-sun";
+
+      }
+      switchMode.addEventListener('click', () => {
+    
+        switchMode.classList.toggle('bx-moon');
+        switchMode.classList.toggle('bx-sun');
+        let mode = body.classList.toggle('dark');
+       // console.log(mode);
+        localStorage.setItem('darkmode', mode );
+      });
+      
+    </script>
+
+    <!--Script backtop-->
+    <script>
+      $(document).ready(function()
+      {
+        $(window).scroll(function()
+        {
+          if($(this).scrollTop())
+          {
+            if($(this).scrollTop())
+            {
+              $('#backtop').fadeIn();
+            }
+          }
+             
+        });
+        $("#backtop").click(function(){
+           $('html, body').animate({scrollTop: 0}, 10000);
+        });
+      });
+    </script>
+
+          <!---srcipt notification-->
+          <script>
+    
+        // getting HTML elements
+        const nav = document.querySelector(".noti_choose"),
+              toggleBtn = nav.querySelector(".toggle-btn");
+      
+          toggleBtn.addEventListener("click" , () =>{
+            nav.classList.toggle("open");
+          });
+      
+        // js code to make draggable nav
+        function onDrag({movementY}) { //movementY gets mouse vertical value
+          const navStyle = window.getComputedStyle(nav), //getting all css style of nav
+                navTop = parseInt(navStyle.top), // getting nav top value & convert it into string
+                navHeight = parseInt(navStyle.height), // getting nav height value & convert it into string
+                windHeight = window.innerHeight; // getting window height
+      
+          nav.style.top = navTop > 0 ? `${navTop + movementY}px` : "1px";
+          if(navTop > windHeight - navHeight){
+            nav.style.top = `${windHeight - navHeight}px`;
+          }
+        }
+      
+        //this function will call when user click mouse's button and  move mouse on nav
+        nav.addEventListener("mousedown", () =>{
+          nav.addEventListener("mousemove", onDrag);
+        });
+      
+        //these function will call when user relase mouse button and leave mouse from nav
+        nav.addEventListener("mouseup", () =>{
+          nav.removeEventListener("mousemove", onDrag);
+        });
+        nav.addEventListener("mouseleave", () =>{
+          nav.removeEventListener("mousemove", onDrag);
+        });
+      
+        </script>
+    <h1 style="margin-left: 60px;"><i>Kết quả tìm kiếm</i></h1>
+    <!--Phần gợi ý 1-->
+    <div class="row">
+        
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <p
+            style="align-items: center; text-align: center;">-----------------------------------------------------------------------------------------------------------------------------</p>
+        <iframe src="Footer.html" scrolling="no" style="width:100%;height:500px;box-sizing: border-box;"></iframe>
+    </footer>
+    <script src="./assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>BODO_BETRAI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/css/object.css">
+  <link rel="stylesheet" href="../assets/css/body.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="./assets/font/fontawesome-free-6.5.1-web/css/all.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+ 
+      height: 100%;
+    
+    width: 100%;
+    }
+
+    .swiper-slide {
+   
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 760px) {
+      .swiper-button-next {
+        right: 20px;
+        top: 35%;
+        transform: translateY(-100%);
+      }
+
+      .swiper-button-prev {
+        left: 20px;
+        top: 35%;
+       transform: translateY(-100%);
+      }
+    }
+
+    .img:hover
+    {
+      transform: scale(1.1);
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+      display: none;
+    }
+   
+
+    /* */
+    .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(222, 222, 222);
+  color: rgb(9, 9, 9);
+  transform: rotateY(180deg);
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.flip-card-back span{
+  color: black;
+  float: right;
+  margin-top: 50px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+/* ngoi sao star */
+.checked {
+     color: orange;
+}
+/* */
+.flip-card-img >img
+{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+a
+{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+  </style>
+</head>
+
+<body>
+ 
+
+  <!-- Swiper -->
+  <div class="swiper ">
+    <div class="swiper-wrapper">
+      
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nu_1.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Trương Quỳnh Như</h4> 
+                    <a href="assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img1.webp">Áo phông nữ cổ tròn dáng suông </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img1.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img3.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img5.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo chất lượng ổn, phù hợp túi tiền</p> 
+                    <span>12/05/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+     
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nam_1.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Lê Văn Nam</h4> 
+                    <a href="assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img1.webp">   Áo sơ mi nam cotton cổ tàu tay dài dáng suông
+                    </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img1.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img3.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img5.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo chất lượng ổn đáng tiền mua</p> 
+                    <span>9/05/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nu_2.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Nguyễn Thanh Thảo</h4> 
+                    <a href="assets/img/Sanpham/begai/Ao/Aokhoac/Sp1/img2.webp">  Áo khoác gile chần bông bé gái có mũ </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/begai/Ao/Aokhoac/Sp1/img2.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/begai/Ao/Aokhoac/Sp1/img3.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/begai/Ao/Aokhoac/Sp1/img4.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo đẹp phù hợp với giá tiền</p> 
+                    <span>12/4/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nam_2.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Lê Công Minh</h4> 
+                    <a href="assets/img/Sanpham/betrai/DoBo/Sp2/img1.webp"> Bộ mặc nhà bé trai cotton  </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/betrai/DoBo/Sp2/img1.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/betrai/DoBo/Sp2/img4.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/betrai/DoBo/Sp2/img5.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo đẹp, giao hàng nhanh chóng</p> 
+                    <span>17/03/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nam_1.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Lê Văn Nam</h4> 
+                    <a href="assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img1.webp">   Áo sơ mi nam cotton cổ tàu tay dài dáng suông
+                    </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img1.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img3.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nam/Ao/Aosomi/Sp1/trang/img5.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo chất lượng ổn đáng tiền mua</p> 
+                    <span>9/05/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="col-lg-4 col-md-6 col-sm-12 items ">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="flip-card-img">
+                           <img src="assets/img/avatar/nu_1.jpg" alt="Avatar" >
+                    </div>
+                    <h4>Trương Quỳnh Như</h4> 
+                    <a href="assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img1.webp">Áo phông nữ cổ tròn dáng suông </a> 
+    
+                    <div style="margin-top: 20px;">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                     <h4>Xem mẫu tham khảo</h4>
+                     <p>Từ người mua</p>
+                     <div style="display: flex;margin: 0 50px">
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img1.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img3.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                      <a href="#" ><img src= "assets/img/Sanpham/nu/Ao/Aothun/Sp1/nau/img5.webp" alt="Avatar" style="width:70px;height:70px; border-radius: 10px;padding-right: 5px;"></a>
+                   </div>
+                    <p style="font-size: 15px; margin-top: 40px;">Áo chất lượng ổn, phù hợp túi tiền</p> 
+                    <span>12/05/2013</span>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+     
+    </div>
+    <div class="swiper-button-next">
+      <i class='bx bx-left-arrow-alt'></i>
+    </div>
+    <div class="swiper-button-prev">
+       <i class='bx bx-right-arrow-alt'></i>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script>
+</body>
+
+</html>
